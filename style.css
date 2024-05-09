@@ -1,0 +1,417 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+  font-family: "Material Symbols Outlined" !important;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** END RESET **/
+html {
+  margin: 0;
+  padding: 0;
+}
+html * {
+  font-family: "DM Sans", sans-serif !important;
+}
+html body {
+  /** HEADER **/
+}
+html body .input-group {
+  display: flex;
+  flex-direction: column;
+}
+html body .input-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #acb8bd;
+  margin-bottom: 6px;
+}
+html body .input-group select,
+html body .input-group input {
+  border: 1px solid #dde2e5;
+  padding: 12px 24px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #151414;
+}
+html body button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.1s ease all;
+  cursor: pointer;
+}
+html body button.primary {
+  background-color: #fa0150;
+  color: #fff;
+  font-weight: 400;
+}
+html body button.secondary {
+  background-color: #151414;
+  color: #fff;
+}
+html body button.btn-lg {
+  padding: 12px 32px;
+}
+html body button:active {
+  transform: scale(0.98);
+}
+html body header {
+  border-bottom: 1px solid #acb8bd;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  align-items: center;
+}
+html body header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #212429;
+  line-height: 1;
+}
+html body main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  margin-top: 52px;
+  padding: 0 32px;
+}
+html body main .card {
+  background-color: #f6f6f6;
+  padding: 28px;
+  border-radius: 12px;
+}
+html body main .card .title {
+  color: #fa0150;
+  font-weight: 400;
+  font-size: 21px;
+}
+html body main .card.profile .logo-name {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+html body main .card.profile .logo-name .initials {
+  background-color: #fa0150;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  height: 128px;
+  width: 128px;
+}
+html body main .card.profile .logo-name .name h5 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #1f1e25;
+  margin-bottom: 12px;
+}
+html body main .card.profile .input-group {
+  margin-top: 24px;
+}
+html body main .card.profile .checks {
+  margin-top: 24px;
+}
+html body main .card.profile .checks input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  border: none;
+}
+html body main .card.profile .checks input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 0;
+  left: 0;
+  border: 1px solid #dde2e5;
+  border-radius: 3px;
+  background-color: white;
+  transition: 0.2s ease all;
+  overflow: hidden;
+}
+html body main .card.profile .checks input[type=checkbox]:checked:before {
+  background-color: #374fc7;
+}
+html body main .card.profile .checks input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 15px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+html body main .card.profile .checks .group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+html body main .card.profile .checks .group label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+}
+html body main .card.services h4 {
+  margin-bottom: 24px;
+}
+html body main .card.services button {
+  margin-top: 24px;
+}
+html body main .card.services .current-services .header {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+}
+html body main .card.services .current-services .header span {
+  color: #acb5bd;
+}
+html body main .card.services .current-services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+html body main .card.services .current-services ul li {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 24px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body main .card.services .current-services ul li .init {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+html body main .card.services .current-services ul li .init .bubble {
+  width: 12px;
+  height: 12px;
+  background-color: #374fc6;
+  border-radius: 50%;
+}
+html body main .card.services .current-services ul li .delete {
+  color: #acb5bd;
+  cursor: pointer;
+}
+html body main .card table.hours {
+  width: 100%;
+  margin-top: 18px;
+}
+html body main .card table.hours thead tr th {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+html body main .card table.hours tbody tr {
+  margin-bottom: 6px;
+}
+html body main .card table.hours tbody tr td {
+  padding: 6px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+html body main .card table.hours tbody tr td:not(:last-child) {
+  padding-right: 24px;
+}
+html body main .card table.hours tbody tr td:first-child span {
+  padding: 6px 12px;
+  background-color: #fa0150;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main .card table.hours tbody tr.disabled td {
+  color: rgba(0, 0, 0, 0.3);
+}
+html body main .card table.hours tbody tr.disabled td:first-child span {
+  padding: 6px 12px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main .card div.others {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #acb8bd;
+}
+html body main .card div.others .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+html body main .card div.others .actions button {
+  background-color: #fff;
+  color: #000;
+}
+@media (max-width: 992px) {
+  html body header {
+    padding: 24px 6px 12px;
+  }
+  html body main {
+    margin-top: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+  html body main .card.profile .logo-name .initials {
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+  }
+  html body main .card.services ul {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
