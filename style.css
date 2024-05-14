@@ -210,10 +210,27 @@ html body main .card {
   padding: 28px;
   border-radius: 12px;
 }
+html body main .card .title:after {
+  content: "x";
+}
+html body main .card[open] .title:after {
+  content: "+";
+}
+html body main .card .expand-content {
+  height: auto;
+  transition: transform 0.26s ease;
+}
+html body main .card .expand-content.closed {
+  transform: scaleY(0);
+  transform-origin: top;
+}
 html body main .card .title {
   color: #fa0150;
   font-weight: 400;
   font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 html body main .card.profile .logo-name {
   display: flex;
@@ -354,6 +371,10 @@ html body main .card table.hours tbody tr td {
   padding: 6px 0;
   font-weight: 700;
   font-size: 14px;
+}
+html body main .card table.hours tbody tr td select {
+  border: none;
+  background-color: transparent;
 }
 html body main .card table.hours tbody tr td:not(:last-child) {
   padding-right: 24px;

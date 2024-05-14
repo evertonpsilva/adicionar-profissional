@@ -22,7 +22,7 @@
       <button class="primary btn-lg">Salvar</button>
     </header>
     <main>
-      <div class="card profile">
+      <details class="card profile" open>
         <div class="logo-name">
           <div class="initials">MS</div>
           <div class="name">
@@ -30,252 +30,546 @@
             <button class="secondary">Enviar logotipo</button>
           </div>
         </div>
-        <h4 class="title">Dados básicos</h4>
-        <div class="input-group">
-          <label for="name">NOME</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Maria da silva"
-          />
-        </div>
-        <div class="input-group">
-          <label>SEXO</label>
-        </div>
-        <input type="radio" name="genre" id="fem" /><label for="fem"
-          >Feminino</label
-        >
-        <input type="radio" name="genre" id="male" /><label for="male"
-          >Masculino</label
-        >
-        <div class="input-group">
-          <label for="email">EMAIL</label>
-          <input type="email" placeholder="email@email.com" />
-        </div>
-        <div class="input-group">
-          <label for="password">SENHA</label>
-          <input type="password" placeholder="********" />
-        </div>
+        <summary class="title">
+          <h4>
+            Dados básicos
+            
+          </h4>
+        </summary>
+        <div class="description">
+          <div class="input-group">
+            <label for="name">NOME</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Maria da silva"
+            />
+          </div>
+          <div class="input-group">
+            <label>SEXO</label>
+          </div>
+          <input type="radio" name="genre" id="fem" /><label for="fem"
+            >Feminino</label
+          >
+          <input type="radio" name="genre" id="male" /><label for="male"
+            >Masculino</label
+          >
+          <div class="input-group">
+            <label for="email">EMAIL</label>
+            <input type="email" placeholder="email@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="password">SENHA</label>
+            <input type="password" placeholder="********" />
+          </div>
 
-        <div class="input-group">
-          <label for="level">NÍVEL DE ACESSO</label>
-          <select name="level" id="level">
-            <option value="profissional">Profissional</option>
-            <option value="admin">Admin</option>
-          </select>
+          <div class="input-group">
+            <label for="level">NÍVEL DE ACESSO</label>
+            <select name="level" id="level">
+              <option value="profissional">Profissional</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="password">CNPJ</label>
+            <input type="text" placeholder="00.000.000/0000-00" />
+          </div>
+          <div class="checks">
+            <div class="group">
+              <input
+                type="checkbox"
+                name="notification_online"
+                id="notification_online"
+              />
+              <label for="notification_online"
+                >Notificar via email novo agendamento online</label
+              >
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                name="online_schedule"
+                id="online_schedule"
+              />
+              <label for="online_schedule">Permitir agendamento online</label>
+            </div>
+          </div>
         </div>
-        <div class="checks">
-          <div class="group">
+        <!-- <h4 class="title" onclick="toggleExpand('.personal-data')">
+          Dados básicos
+          <span class="material-symbols-outlined personal-data-expand-icon">
+            keyboard_arrow_down
+          </span>
+        </h4>
+        <div class="expand-content personal-data">
+          <div class="input-group">
+            <label for="name">NOME</label>
             <input
-              type="checkbox"
-              name="notification_online"
-              id="notification_online"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Maria da silva"
             />
-            <label for="notification_online"
-              >Notificar via email novo agendamento online</label
-            >
           </div>
-          <div class="group">
-            <input
-              type="checkbox"
-              name="online_schedule"
-              id="online_schedule"
-            />
-            <label for="online_schedule">Permitir agendamento online</label>
+          <div class="input-group">
+            <label>SEXO</label>
+          </div>
+          <input type="radio" name="genre" id="fem" /><label for="fem"
+            >Feminino</label
+          >
+          <input type="radio" name="genre" id="male" /><label for="male"
+            >Masculino</label
+          >
+          <div class="input-group">
+            <label for="email">EMAIL</label>
+            <input type="email" placeholder="email@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="password">SENHA</label>
+            <input type="password" placeholder="********" />
+          </div>
+
+          <div class="input-group">
+            <label for="level">NÍVEL DE ACESSO</label>
+            <select name="level" id="level">
+              <option value="profissional">Profissional</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="password">CNPJ</label>
+            <input type="text" placeholder="00.000.000/0000-00" />
+          </div>
+          <div class="checks">
+            <div class="group">
+              <input
+                type="checkbox"
+                name="notification_online"
+                id="notification_online"
+              />
+              <label for="notification_online"
+                >Notificar via email novo agendamento online</label
+              >
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                name="online_schedule"
+                id="online_schedule"
+              />
+              <label for="online_schedule">Permitir agendamento online</label>
+            </div>
+          </div>
+        </div> -->
+      </details>
+      <details class="card services" open>
+        <summary class="title">
+          <h4 >
+            Serviços associados ao profissional
+           
+          </h4>
+        </summary>
+        <div class="description">
+          <div class="input-group">
+            <label for="service">SERVIÇO</label>
+            <select name="service" id="service">
+              <option>Selecione</option>
+              <option value="corte1">Corte 1</option>
+              <option value="corte2">Corte 2</option>
+              <option value="corte3">Corte 3</option>
+              <option value="corte4">Corte 4</option>
+            </select>
+            <button class="secondary btn-lg">Vincular</button>
+          </div>
+          <div class="current-services">
+            <div class="header">
+              <h6>SERVIÇOS VINCULADOS</h6>
+              <span>COMISSÃO PERSONALIZADA</span>
+            </div>
+            <ul>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+              <li>
+                <div class="init">
+                  <div class="bubble"></div>
+                  <h5>Corte de cabelo</h5>
+                </div>
+                <span class="middle">8%</span>
+                <span class="delete material-symbols-outlined"> delete </span>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="card services">
-        <h4 class="title">Serviços associados ao profissional</h4>
-        <div class="input-group">
-          <label for="service">SERVIÇO</label>
-          <select name="service" id="service">
-            <option>Selecione</option>
-            <option value="corte1">Corte 1</option>
-            <option value="corte2">Corte 2</option>
-            <option value="corte3">Corte 3</option>
-            <option value="corte4">Corte 4</option>
-          </select>
-          <button class="secondary btn-lg">Vincular</button>
-        </div>
-        <div class="current-services">
-          <div class="header">
-            <h6>SERVIÇOS VINCULADOS</h6>
-            <span>COMISSÃO PERSONALIZADA</span>
-          </div>
-          <ul>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-            <li>
-              <div class="init">
-                <div class="bubble"></div>
-                <h5>Corte de cabelo</h5>
-              </div>
-              <span class="middle">8%</span>
-              <span class="delete material-symbols-outlined"> delete </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h4 class="title">Expediente *</h4>
-        <table class="hours">
-          <thead>
-            <tr>
-              <th>Dias</th>
-              <th>Início</th>
-              <th>Intervalo</th>
-              <th>Retorno</th>
-              <th>Fim</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="disabled">
-              <td><span>DOM</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr>
-              <td><span>SEG</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr>
-              <td><span>TER</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr>
-              <td><span>QUA</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr>
-              <td><span>QUI</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr>
-              <td><span>SEX</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-            <tr class="disabled">
-              <td><span>SAB</span></td>
-              <td>8:00</td>
-              <td>12:00</td>
-              <td>13:30</td>
-              <td>18:00</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="others">
-          <h4 class="title">Outros</h4>
-          <div class="actions">
-            <button class="btn-lg">Adicionar endereço</button>
-            <button class="btn-lg">Adicionar dados pessoais</button>
+      </details>
+      <details class="card profile" open>
+        <summary class="title">
+        <h4 >
+          Expediente *
+        
+        </h4>
+      </summary>
+        <div class="description">
+          <table class="hours">
+            <thead>
+              <tr>
+                <th>Dias</th>
+                <th>Início</th>
+                <th>Intervalo</th>
+                <th>Retorno</th>
+                <th>Fim</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="disabled">
+                <td><span>DOM</span></td>
+                <td>
+                  <select name="hour" id="hour" disabled>
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour" disabled>
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour" disabled>
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour" disabled>
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><span>SEG</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><span>TER</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><span>QUA</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><span>QUI</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><span>SEX</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="disabled">
+                <td><span>SAB</span></td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="hour" id="hour">
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="others">
+            <h4 class="title">Outros</h4>
+            <div class="actions">
+              <button class="btn-lg">Adicionar endereço</button>
+              <button class="btn-lg">Adicionar dados pessoais</button>
+            </div>
           </div>
         </div>
       </div>
     </main>
   </body>
+  <script>
+    function toggleExpand(className) {
+      var el = document.querySelector(className);
+
+      el.classList.toggle('closed');
+    }
+  </script>
 </html>
